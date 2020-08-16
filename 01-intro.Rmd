@@ -1,5 +1,7 @@
 # Introduction {#intro}
 
+Privacy in apps is increasingly topic of popular debate. But what is privacy, and what are my obligations as a developer?
+
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(legal-requirements).
 
 ## What is privacy?
