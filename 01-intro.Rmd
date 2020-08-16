@@ -1,11 +1,45 @@
 # Introduction {#intro}
 
-Privacy in apps is increasingly topic of popular debate. But what is privacy, and what are my obligations as a developer?
+Have you ever worried about sharing an honest opinion with friend on WhatsApp, [or WhatsApp gaining access to the ‘encrypted’ communications](https://www.wired.com/story/whatsapp-security-flaws-encryption-group-chats/)? Have you worried about being listened to by the Facebook app, [which it probably does not—they are just damn good at predicting your behaviour](https://www.newstatesman.com/science-tech/social-media/2018/03/testing-facebook-listens-your-conversations-adverts)? Or, ever drafted a Facebook post, which you ended up discarding, [which Facebook may retain regardless](https://slate.com/technology/2013/12/facebook-self-censorship-what-happens-to-the-posts-you-dont-publish.html)? Have you worried about sending photos via Snapchat, [or Snapchat staff having access to photos](https://www.vice.com/en_us/article/xwnva7/snapchat-employees-abused-data-access-spy-on-users-snaplion)?
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(legal-requirements).
+If you confirm any of the above, you are probably not living freely in the digital world. I find this frightening. I am under a liberal democracy, whose central role is the [protection is of my freedom](https://oll.libertyfund.org/quotes/497). I do not feel free. Rather, I feel surveilled. [Digitally surveilled](https://www.theguardian.com/books/2019/feb/02/age-of-surveillance-capitalism-shoshana-zuboff-review).
 
 ## What is privacy?
 
-## History of privacy
+Privacy is a highly individual concept. The privacy scholar Helen Nissenbaum characterised privacy as 'contextual integrity'. This means that individuals try express themselves differently, depending on the *context*, to protect their privacy. For instance, many people share different information with their boss at work than with their loves ones.
 
+It is difficult to put this concept into software, though worth to remember. The aspect of privacy that this work focuses on is 'data protection', a subject of much current debate. The European Union has strengthened the right to data protection in their 2018 General Data Protection Regulation (GDPR), a challenge and fear for app developers worldwide.
 
+Data protection is rooted in the concept ‘informational self-determination’. This concept was first introduced by the [1983 landmark ruling](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/1983/12/rs19831215_1bvr020983en.html) of the German Federal Constitutional Court. This highest German court concluded that
+
+> In the context of modern data processing, [human dignity, particularly the right to personal identity,] encompasses the protection of the individual against unlimited collection, storage, use and sharing of personal data. The fundamental right guarantees the authority conferred on the individual to, in principle, decide themselves on the disclosure and use of their personal data. Limitations of this right to “*informational self-determination*” are only permissible if there is an overriding public interest.
+
+In other words, informational self-determination means that an individual should have control over the data that relates to him (such data is called [‘personal data’ in GDPR](https://gdpr-info.eu/art-4-gdpr/)). As such, informational self-determination is similar to the concept of property, [yet not quite the same](https://leidenlawblog.nl/articles/privacy-and-property-do-you-really-own-your-personal-data).
+
+## What is data?
+
+The most obvious form of data is what we actively share (Active Data). This is data from filling out forms about our personal details (whether online or offline), sharing pictures with friends, or sending emails. Most data however is not created directly by individuals, but rather created from them by a third party (Passive Data), by means such as observation, combination, or inference.
+
+A ubiquitous example is [app tracking](https://en.ryte.com/wiki/App_Tracking), data collection from apps about usage behaviour. The collected data often includes which buttons you click, what purchases you make, and when and how often you use an app. Researchers from the University of Oxford found that [some 90% of mobile apps could send such data to Google, some 40% to Facebook](https://arxiv.org/pdf/1804.03603.pdf), and, most of the time, to numerous lesser known parties. The next chapter will cover this more in depth.
+
+Passive Data is surprisingly valuable, and many previous calculations [underestimate its worth](https://ig.ft.com/how-much-is-your-personal-data-worth/). The business model of the online advertising industry revolves around this type of data. Only in 2018, Google generated [136.2bn US Dollars of revenue from advertising](https://www.statista.com/statistics/266249/advertising-revenue-of-google/). That’s about 34 dollars of annual revenue from every one of the [4bn global Internet users](https://wearesocial.com/blog/2018/01/global-digital-report-2018), or 3 dollars per month.
+
+## The data deal**: **Would you sell your data?
+
+Suppose you were approached by a stranger in the street, offering you a deal: You’d install a little tool on your smartphone, that’d continuously share your visited websites with the stranger. The stranger may then do whatever he wants with your browsing history, but vows not to pass on any other directly identifying data such as name or email. In turn, you’d be given *1 dollar per month*. That’s about a third of what Google generates from every Internet user per month. Sounds good, doesn’t it?
+
+When making your decision, keep in mind that the calculations above did not factor in, amongst other aspects, the global differences in income. The median income per person in the United States lies [more than five times above](https://news.gallup.com/poll/166211/worldwide-median-household-income-000.aspx) the global median. Even if you increase the monthly payment fivefold, the value of your data (not just the browsing history) is probably much higher than 5 dollars per month. These estimations only considered Google, not the whole advertising industry.
+
+Further, data is usually collected irreversibly. Once data is collected, there are usually no means of getting it back (regardless of the legislation stipulating ‘informational self-determination’). Instead, our data is being *stolen at scale*.
+
+## So what?
+
+Does the ongoing, large-scale data theft cause harm? Cambridge Analytica used the [data of 87 million Facebook users](https://about.fb.com/news/2018/04/restricting-data-access/) to sway elections. Surely, none of my data was used. And, if even so, I would certainly not be the one falling for the cheap tricks of a [now defunct company](https://www.theguardian.com/uk-news/2018/may/02/cambridge-analytica-closing-down-after-facebook-row-reports-say), right? Or worse, vote Trump.
+
+A widely discussed issue of this data collection can now be witnessed in machine learning, whose use in industry is spreading. Machine learning systems are trained on data, that was generated from humans. Since humans are naturally biased in some way, the predictions of algorithms are subject to biases. Biases are often blamed on the underlying algorithms, but in fact, humans are at fault, in the design of algorithms, in the collection of data, and in the decision leading to unfettered data collection in the first place.
+
+Biased data exhibits the problem that it may reinforce views and stereotypes of the past. This may not only lead to discrimination, but inhibit societal progress. It is often argued that data protection and thereby constraining data collection hampers economic progress. But, do we want to sacrifice societal progress? We need both.
+
+## Sorry Google, we need data protection.
+
+Data is intangible, and the consequences of data collection are mostly invisible. Despite all legislative requirements, aiming to protect the informational self-determination of the individual, data continues to be collected, if not stolen, at scale. The collected data is incredibly valuable, yet collection mostly profits the data-collecting companies. Data collection is irreversible, and may impede societal progress, by reinforcing the stereotypes of the past. We, as a society, need data protection. And, app developer play a role in this.

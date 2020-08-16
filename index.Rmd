@@ -1,4 +1,4 @@
---- 
+---
 title: "WIP: A Practitioner's Guide to Android Privacy"
 author: "Konrad Kollnig"
 date: "Version `r Sys.Date()`"
@@ -12,12 +12,14 @@ description: "How to treat user privacy right on Android? This book tries to cov
 
 # Preface {-}
 
-Nice that you found your way here.
+Nice that you found your way here. Privacy in apps is increasingly topic of popular debate. But what is privacy, and what are my obligations as a developer?
+
+Surprisingly, there is very few information on there on how to do things right. I, myself, am an app developer, and spent hours browsing on the web.
 
 ![Creative Commons License](images/by-nc-sa.png)  
 This online book is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 # About the author
 
-I am a current PhD student at the Computer Science Department of Oxford University. My research interest lies in data protection in smartphone apps and the regulation of tech companies. I am developing *TrackerControl*, an Android app that shows you what companies track your app usage, and allows you to limit this.
-Further, I enjoy discussing all things technical on my blog. These experiences have motivated summarising my experiences in this short book.
+Konrad is a current PhD student at the Computer Science Department of Oxford University. His research interest lies in data protection in smartphone apps and the regulation of tech companies. He is developing *TrackerControl*, an Android app that shows you what companies track your app usage, and allows you to limit this.
+Further, he enjoys discussing all things technical on my blog. These experiences have motivated this  short book.
