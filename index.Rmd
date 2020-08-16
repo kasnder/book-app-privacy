@@ -19,7 +19,7 @@ Surprisingly, there is very few information on there on how to do things right. 
 ![Creative Commons License](images/by-nc-sa.png)  
 This online book is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-# About the author
+# About the Author {-}
 
 Konrad is a current PhD student at the Computer Science Department of Oxford University. His research interest lies in data protection in smartphone apps and the regulation of tech companies. He is developing *TrackerControl*, an Android app that shows you what companies track your app usage, and allows you to limit this.
 Further, he enjoys discussing all things technical on my blog. These experiences have motivated this  short book.
