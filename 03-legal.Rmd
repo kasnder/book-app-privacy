@@ -1,10 +1,20 @@
-# Legal Requirements
+# Legal Stuff
 
-This chapter shall briefly summarise *your obligations* under EU Data Protection Legislation (GDPR) when sharing apps *in non-legal terms*. Note that this is no legal advice, only an app developer’s attempt to make data protection more understandable.
+This chapter shall briefly summarise *your legal obligations* as an app developer, under EU Data Protection Legislation (GDPR). This shall cover the most important buts, when pushling apps *in non-legal terms*. Note that this is no no legal advice, only an app developer’s attempt to make data protection more understandable.
 
-If you have app users from the European Union, you are responsible for personal data collected through your app. Personal data is data relating to individuals. This may include device data, pseudonyms, user identifiers, advertising identifiers, (dynamic) IP addresses, and postcodes, especially in combination with other data. For these reasons, it is usually not possible to make personal data non-personal.
+You must respect the rules of GDPR, if you have app users from the European Union. This will almost always be the case. Usually, you are responsible for *all* data collected through your app. GDPR protects personal data, which is data relating to individuals. This may include device data, pseudonyms, user identifiers, advertising identifiers, (dynamic) IP addresses, and postcodes, especially in combination with other data. For these reasons, it is usually not possible to make personal data non-personal. Almost all data collected from apps is personal, and requires careful protection.
 
-You are also responsible for personal data collected from your app for third-party services, such as advertising, analytics, or crash reporting services.
+You are also responsible for personal data collected from your app for third-party services, such as advertising, analytics, or crash reporting services. For instance, this means that you are even responsible for data, that is collected during the use of *Google Firebase Analytics* or *Crashlytics* -- even if you never see the raw data.
+
+**Ask for consent**
+
+You can only use most third-party services, including Firebase Analytics, after the user has agreed to this practice.
+
+*iOS:* According the Apple’s terms, you should ask for user consent, before you or your third-parties collect *any data*, no matter if personal and non-personal.
+
+*Android:* According to Google’s terms, if you process sensitive data (e.g. health-related), or process data in unexpected ways, do tell the user in a clear manner and ask for his *consent* (no pre-ticked boxes allowed). Google also states that the use of some of their services, such as Firebase Analytics, needs explicit user consent.
+
+**Always provide a privacy policy.** Provide a privacy policy on the app store and within the app. You may want to use one of the privacy policy generators, such as [iubenda.com](https://gdpr4devs.com/iubenda.com). Make sure it discloses the data collection of you and your third-parties adequately.
 
 **Risk evaluation and documentation.** GDPR acknowledges that there will never be full protection of personal data. Instead, it encourages a risk-based approach, that is, seriously analysing the possible risks to data protection and taking appropriate data protection measures. If you can prove that you took all appropriate measures, there is no need to be overly afraid of high fines.
 
@@ -14,14 +24,10 @@ Make sure that you can provide such proof, by *documenting all data protection c
 
 Furthermore:
 
-- *iOS:* According the Apple’s terms, you should ask for user consent, before you or your third-parties collect *any data*, no matter if personal and non-personal.
-  *Android:* According to Google’s terms, if you process sensitive data (e.g. health-related), or process data in unexpected ways, do tell the user in a clear manner and ask for his *consent* (no pre-ticked boxes allowed).
 - At best, use at most one third-party service for one purpose, that is, at most one advertising, analytics, and crash reporting service.
 - Check with every app release, if you can reduce data collection or remove any third-party services.
 - Verify the default settings of your third-party services (on-device and server-wise), since third-parties have an interest in collecting ever more data. Only activate third-party services, once user consent is established. More information can be found in the Appendix below.
 - If your app is aimed at *children*, do not employ any third-party services. It’s not good practice, and a violation of Apple’s terms.
-
-**Always provide a privacy policy.** Provide a privacy policy on the app store and within the app. You may want to use one of the privacy policy generators, such as [iubenda.com](https://gdpr4devs.com/iubenda.com). Make sure it discloses the data collection of you and your third-parties adequately.
 
 **Handling user requests.** The GDPR entitles users to manage (e.g. access, delete, correct) any data about them. You can implement these user rights directly in software, which would show your efforts towards GDPR compliance. Yet, taking requests via email seriously is just as fine. You have one month to respond to user requests. This response may either address the request, or, for complex user requests, request an extension for a further 2 months.
 

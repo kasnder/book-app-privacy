@@ -50,6 +50,8 @@ If you're curious now how your app is doing, look no further! There are a couple
 
 ### Exodus Privacy
 
+![exodus](images/exodus.png)
+
 [Exodus Privacy](https://reports.exodus-privacy.eu.org/en/) is an ambitious project by a group around French app privacy advocates. This group tries to create a database of the whole app tracking ecosystem. They provide the tools to analyse apps for privacy aspects, cultivate a database of relevant privacy characteristics, and regularly scan the most popular Android apps for privacy aspects with their tools.
 
 At the time of writing, their database comprises 304 tracker companies, with which apps have been found to share data. They have analysed 76&nbsp;530 Android apps. You can [search for your app on their website](https://reports.exodus-privacy.eu.org/en/reports/), or initiate an analysis if not yet on their database.
@@ -58,11 +60,15 @@ If you prefer to keep the results of the analysis private, all tools are open-so
 
 ### AppCensus
 
+![app_census](images/app_census.png)
+
 [AppCensus.io](https://search.appcensus.io/) is another ambitious project to scrutinise the privacy of Android apps. Compare to Exodus, these researchers focus more on run-time behaviour on apps, rather than tracking capabilities of apps. As a result, their database provides very detailed insights into actual app behaviour. This data is obtained by running the apps on actual phones (they claim).
 
 Unfortunately, AppCensus is a commercial project, and none of their tools has been published. This means their analysis tools be used by non-affiliated app developers.
 
 ### TrackerControl
+
+<img src="images/trackercontrol.png" alt="trackercontrol" style="zoom:50%;" />
 
 I, myself, am developing a tool -- called TrackerControl -- to provide insights into app privacy. TrackerControl allows users to monitor and control the widespread, ongoing, hidden data collection in mobile apps about user behaviour ('tracking'). To detect tracking, TrackerControl checks all network traffic against the *Disconnect blocklist*, used and trusted by the Mozilla Firefox browser. Additionally, our in-house blocklist is used, created *from analysing ~1 000 000 apps*!
 
@@ -119,4 +125,3 @@ Google Chrome takes the opposite direction than Safari and Firefox. Instead of p
 Changes to Google Chrome have a large reach. Chrome leads the browser market, being [used by 68% of desktop users](https://gs.statcounter.com/browser-market-share/desktop/worldwide). Safari and Firefox only attract 9% of users each. It is known that Google relies on advertising and data collection. They have a natural interest in limiting ad and tracker blockers. What might be less known to browser users is that the choice of browser is also a choice of privacy.
 
 Overall, this highlights how DNT has failed, but has motivated new solutions against tracking. It also underlines that privacy cannot be taken for granted in the 21st century. We will need to continue the debate, and to seek innovative solutions around user privacy.
-
