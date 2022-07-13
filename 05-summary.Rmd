@@ -1,6 +1,5 @@
 # Summary
 
-This will follow..
+Thank you for making it here. I hope that this short manuscript gave you a good overview of privacy, legal obligations, and how to take technical measures to fulfill both legal and users' expectations.
 
-
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(legal-requirements).
+If you have any suggestions and feedback, then please reach out to <book@trackercontrol.org>.

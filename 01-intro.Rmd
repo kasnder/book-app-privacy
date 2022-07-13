@@ -2,7 +2,7 @@
 
 Have you ever worried about sharing an honest opinion with friend on WhatsApp, [or WhatsApp gaining access to the ‘encrypted’ communications](https://www.wired.com/story/whatsapp-security-flaws-encryption-group-chats/)? Have you worried about being listened to by the Facebook app, [which it probably does not—they are just damn good at predicting your behaviour](https://www.newstatesman.com/science-tech/social-media/2018/03/testing-facebook-listens-your-conversations-adverts)? Or, ever drafted a Facebook post, which you ended up discarding, [which Facebook may retain regardless](https://slate.com/technology/2013/12/facebook-self-censorship-what-happens-to-the-posts-you-dont-publish.html)? Have you worried about sending photos via Snapchat, [or Snapchat staff having access to photos](https://www.vice.com/en_us/article/xwnva7/snapchat-employees-abused-data-access-spy-on-users-snaplion)?
 
-If you confirm any of the above, you are probably not living freely in the digital world. I find this frightening. I am under a liberal democracy, whose central role is the [protection is of my freedom](https://oll.libertyfund.org/quotes/497). I do not feel free. Rather, I feel surveilled. [Digitally surveilled](https://www.theguardian.com/books/2019/feb/02/age-of-surveillance-capitalism-shoshana-zuboff-review).
+If you confirm any of the above, you are probably not living freely in the digital world. Isn't this a bit frightening? Shouldn't our democratically elected government ensure the [protection is of our freedoms](https://oll.libertyfund.org/quotes/497), even in the digital world. Despite this, many of us feel surveilled. [Digitally surveilled](https://www.theguardian.com/books/2019/feb/02/age-of-surveillance-capitalism-shoshana-zuboff-review).
 
 ## What is privacy?
 
@@ -40,6 +40,6 @@ A widely discussed issue of this data collection can now be witnessed in machine
 
 Biased data exhibits the problem that it may reinforce views and stereotypes of the past. This may not only lead to discrimination, but inhibit societal progress. It is often argued that data protection and thereby constraining data collection hampers economic progress. But, do we want to sacrifice societal progress? We need both.
 
-## Sorry Google, we need data protection.
+## We need data protection
 
 Data is intangible, and the consequences of data collection are mostly invisible. Despite all legislative requirements, aiming to protect the informational self-determination of the individual, data continues to be collected, if not stolen, at scale. The collected data is incredibly valuable, yet collection mostly profits the data-collecting companies. Data collection is irreversible, and may impede societal progress, by reinforcing the stereotypes of the past. We, as a society, need data protection. And, app developer play a role in this.

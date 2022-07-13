@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>WIP: A Practitioner’s Guide to Android Privacy</title>
+  <title>A Practitioner’s Guide to Android Privacy</title>
   <meta name="description" content="How to treat user privacy right on Android? This book tries to cover the most important technical and legal aspects every Android developer should know about." />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="WIP: A Practitioner’s Guide to Android Privacy" />
+  <meta property="og:title" content="A Practitioner’s Guide to Android Privacy" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="How to treat user privacy right on Android? This book tries to cover the most important technical and legal aspects every Android developer should know about." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="WIP: A Practitioner’s Guide to Android Privacy" />
+  <meta name="twitter:title" content="A Practitioner’s Guide to Android Privacy" />
   
   <meta name="twitter:description" content="How to treat user privacy right on Android? This book tries to cover the most important technical and legal aspects every Android developer should know about." />
   
@@ -32,7 +31,8 @@
   
 
 <link rel="next" href="about-the-author.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,6 +48,9 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -70,26 +73,31 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="" data-path="about-the-author.html"><a href="about-the-author.html"><i class="fa fa-check"></i>About the Author</a></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-privacy"><i class="fa fa-check"></i><b>1.1</b> What is privacy?</a></li>
 <li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#what-is-data"><i class="fa fa-check"></i><b>1.2</b> What is data?</a></li>
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#the-data-deal-would-you-sell-your-data"><i class="fa fa-check"></i><b>1.3</b> The data deal<strong>: </strong>Would you sell your data?</a></li>
 <li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#so-what"><i class="fa fa-check"></i><b>1.4</b> So what?</a></li>
-<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#sorry-google-we-need-data-protection."><i class="fa fa-check"></i><b>1.5</b> Sorry Google, we need data protection.</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#we-need-data-protection"><i class="fa fa-check"></i><b>1.5</b> We need data protection</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="app-privacy.html"><a href="app-privacy.html"><i class="fa fa-check"></i><b>2</b> App Privacy</a><ul>
-<li class="chapter" data-level="2.1" data-path="app-privacy.html"><a href="app-privacy.html#app-tracking"><i class="fa fa-check"></i><b>2.1</b> App Tracking</a><ul>
+<li class="chapter" data-level="2" data-path="app-privacy.html"><a href="app-privacy.html"><i class="fa fa-check"></i><b>2</b> App Privacy</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="app-privacy.html"><a href="app-privacy.html#app-tracking"><i class="fa fa-check"></i><b>2.1</b> App Tracking</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="app-privacy.html"><a href="app-privacy.html#vulnerable-groups-at-risk"><i class="fa fa-check"></i><b>2.1.1</b> Vulnerable groups at risk</a></li>
 <li class="chapter" data-level="2.1.2" data-path="app-privacy.html"><a href="app-privacy.html#weve-been-there.."><i class="fa fa-check"></i><b>2.1.2</b> We’ve been there..</a></li>
 <li class="chapter" data-level="2.1.3" data-path="app-privacy.html"><a href="app-privacy.html#were-all-affected."><i class="fa fa-check"></i><b>2.1.3</b> We’re all affected.</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="app-privacy.html"><a href="app-privacy.html#the-dangers-of-real-time-bidding"><i class="fa fa-check"></i><b>2.2</b> The dangers of real-time bidding</a></li>
-<li class="chapter" data-level="2.3" data-path="app-privacy.html"><a href="app-privacy.html#how-is-my-app-doing"><i class="fa fa-check"></i><b>2.3</b> How is my app doing?</a><ul>
+<li class="chapter" data-level="2.3" data-path="app-privacy.html"><a href="app-privacy.html#how-is-my-app-doing"><i class="fa fa-check"></i><b>2.3</b> How is my app doing?</a>
+<ul>
 <li class="chapter" data-level="2.3.1" data-path="app-privacy.html"><a href="app-privacy.html#exodus-privacy"><i class="fa fa-check"></i><b>2.3.1</b> Exodus Privacy</a></li>
 <li class="chapter" data-level="2.3.2" data-path="app-privacy.html"><a href="app-privacy.html#appcensus"><i class="fa fa-check"></i><b>2.3.2</b> AppCensus</a></li>
 <li class="chapter" data-level="2.3.3" data-path="app-privacy.html"><a href="app-privacy.html#trackercontrol"><i class="fa fa-check"></i><b>2.3.3</b> TrackerControl</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="app-privacy.html"><a href="app-privacy.html#shouldnt-users-act-on-privacy-rather-than-developers"><i class="fa fa-check"></i><b>2.4</b> Shouldn’t users act on privacy, rather than developers?</a><ul>
+<li class="chapter" data-level="2.4" data-path="app-privacy.html"><a href="app-privacy.html#shouldnt-users-act-on-privacy-rather-than-developers"><i class="fa fa-check"></i><b>2.4</b> Shouldn’t users act on privacy, rather than developers?</a>
+<ul>
 <li class="chapter" data-level="2.4.1" data-path="app-privacy.html"><a href="app-privacy.html#history-of-implementation"><i class="fa fa-check"></i><b>2.4.1</b> History of implementation</a></li>
 <li class="chapter" data-level="2.4.2" data-path="app-privacy.html"><a href="app-privacy.html#reasons-for-failure"><i class="fa fa-check"></i><b>2.4.2</b> Reasons for failure</a></li>
 <li class="chapter" data-level="2.4.3" data-path="app-privacy.html"><a href="app-privacy.html#privacy-a-binary-setting"><i class="fa fa-check"></i><b>2.4.3</b> Privacy, a binary setting?</a></li>
@@ -97,23 +105,27 @@
 <li class="chapter" data-level="2.4.5" data-path="app-privacy.html"><a href="app-privacy.html#tracking-continues-whats-next-for-user-privacy"><i class="fa fa-check"></i><b>2.4.5</b> Tracking continues, what’s next for user privacy?</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="legal-requirements.html"><a href="legal-requirements.html"><i class="fa fa-check"></i><b>3</b> Legal Requirements</a><ul>
-<li class="chapter" data-level="3.1" data-path="legal-requirements.html"><a href="legal-requirements.html#sources"><i class="fa fa-check"></i><b>3.1</b> Sources</a></li>
-<li class="chapter" data-level="3.2" data-path="legal-requirements.html"><a href="legal-requirements.html#methodology-behind-these-guidelines"><i class="fa fa-check"></i><b>3.2</b> Methodology behind these guidelines</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="legal-requirements.html"><a href="legal-requirements.html#key-concepts"><i class="fa fa-check"></i><b>3.2.1</b> Key concepts</a></li>
-<li class="chapter" data-level="3.2.2" data-path="legal-requirements.html"><a href="legal-requirements.html#user-rights"><i class="fa fa-check"></i><b>3.2.2</b> User rights</a></li>
-<li class="chapter" data-level="3.2.3" data-path="legal-requirements.html"><a href="legal-requirements.html#principles-and-obligations"><i class="fa fa-check"></i><b>3.2.3</b> Principles and obligations</a></li>
+<li class="chapter" data-level="3" data-path="legal-stuff.html"><a href="legal-stuff.html"><i class="fa fa-check"></i><b>3</b> Legal Stuff</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="legal-stuff.html"><a href="legal-stuff.html#sources"><i class="fa fa-check"></i><b>3.1</b> Sources</a></li>
+<li class="chapter" data-level="3.2" data-path="legal-stuff.html"><a href="legal-stuff.html#methodology-behind-these-guidelines"><i class="fa fa-check"></i><b>3.2</b> Methodology behind these guidelines</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="legal-stuff.html"><a href="legal-stuff.html#key-concepts"><i class="fa fa-check"></i><b>3.2.1</b> Key concepts</a></li>
+<li class="chapter" data-level="3.2.2" data-path="legal-stuff.html"><a href="legal-stuff.html#user-rights"><i class="fa fa-check"></i><b>3.2.2</b> User rights</a></li>
+<li class="chapter" data-level="3.2.3" data-path="legal-stuff.html"><a href="legal-stuff.html#principles-and-obligations"><i class="fa fa-check"></i><b>3.2.3</b> Principles and obligations</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="technical-implementation.html"><a href="technical-implementation.html"><i class="fa fa-check"></i><b>4</b> Technical Implementation</a><ul>
-<li class="chapter" data-level="4.1" data-path="technical-implementation.html"><a href="technical-implementation.html#using-popular-third-party-services-right"><i class="fa fa-check"></i><b>4.1</b> Using popular third-party services right</a></li>
-<li class="chapter" data-level="4.2" data-path="technical-implementation.html"><a href="technical-implementation.html#consent"><i class="fa fa-check"></i><b>4.2</b> Consent</a></li>
-<li class="chapter" data-level="4.3" data-path="technical-implementation.html"><a href="technical-implementation.html#privacy-preserving-alternatives"><i class="fa fa-check"></i><b>4.3</b> Privacy-preserving alternatives</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="technical-implementation.html"><a href="technical-implementation.html#crash-reporting"><i class="fa fa-check"></i><b>4.3.1</b> Crash Reporting</a></li>
-<li class="chapter" data-level="4.3.2" data-path="technical-implementation.html"><a href="technical-implementation.html#analysis"><i class="fa fa-check"></i><b>4.3.2</b> Analysis</a></li>
-<li class="chapter" data-level="4.3.3" data-path="technical-implementation.html"><a href="technical-implementation.html#monetisation"><i class="fa fa-check"></i><b>4.3.3</b> Monetisation</a></li>
+<li class="chapter" data-level="4" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html"><i class="fa fa-check"></i><b>4</b> Technical Implementation (work-in-progress)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#consent"><i class="fa fa-check"></i><b>4.1</b> Consent</a></li>
+<li class="chapter" data-level="4.2" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#using-popular-third-party-services-right"><i class="fa fa-check"></i><b>4.2</b> Using popular third-party services right</a></li>
+<li class="chapter" data-level="4.3" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#privacy-preserving-alternatives"><i class="fa fa-check"></i><b>4.3</b> Privacy-preserving alternatives</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#crash-reporting"><i class="fa fa-check"></i><b>4.3.1</b> Crash Reporting</a></li>
+<li class="chapter" data-level="4.3.2" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#analysis"><i class="fa fa-check"></i><b>4.3.2</b> Analysis</a></li>
+<li class="chapter" data-level="4.3.3" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#monetisation"><i class="fa fa-check"></i><b>4.3.3</b> Monetisation</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="technical-implementation.html"><a href="technical-implementation.html#app-publication"><i class="fa fa-check"></i><b>4.4</b> App Publication</a></li>
+<li class="chapter" data-level="4.4" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#app-publication"><i class="fa fa-check"></i><b>4.4</b> App Publication</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>5</b> Summary</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -129,7 +141,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">WIP: A Practitioner’s Guide to Android Privacy</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Practitioner’s Guide to Android Privacy</a>
           </h1>
         </div>
 
@@ -138,14 +150,18 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">WIP: A Practitioner’s Guide to Android Privacy</h1>
+<h1 class="title">A Practitioner’s Guide to Android Privacy</h1>
 <p class="author"><em>Konrad Kollnig</em></p>
-<p class="date"><em>Version 2020-08-16</em></p>
+<p class="date"><em>Version 2022-07-13</em></p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>Nice that you found your way here. Privacy in apps is increasingly topic of popular debate. But what is privacy, and what are my obligations as a developer?</p>
-<p>Surprisingly, there is very few information on there on how to do things right. I, myself, am an app developer, and spent hours browsing on the web.</p>
+<div id="preface" class="section level1 unnumbered hasAnchor">
+<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Hello and welcome!</p>
+<p>It’s an honour that you found your way here. Privacy in apps is an important topic. But, what does this mean for me as an Android developer?</p>
+<p>Surprisingly, there is very few information out there. This is true even though the General Data Protection Regulation (GDPR), Europe’s flagship data protection law, was introduced in May 2018 – quite a while back.</p>
+<p>I, myself, have been an app developer for many, and spent hours browsing on the web to find out about how to comply.</p>
+<p>‘How do I do privacy in apps right?’ is thus the question that this book seeks to address.</p>
+<p>If you have any suggestions and feedback, then please reach out to <a href="mailto:book@trackercontrol.org" class="email">book@trackercontrol.org</a>.</p>
 <p><img src="images/by-nc-sa.png" alt="Creative Commons License" /><br />
 This online book is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 </div>
@@ -159,7 +175,6 @@ This online book is licensed under a <a href="http://creativecommons.org/license
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -178,6 +193,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -198,6 +214,10 @@ gitbook.start({
 "text": null
 },
 "download": ["guide_app_privacy.pdf", "guide_app_privacy.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

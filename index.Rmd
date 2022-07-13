@@ -1,5 +1,5 @@
 ---
-title: "WIP: A Practitioner's Guide to Android Privacy"
+title: "A Practitioner's Guide to Android Privacy"
 author: "Konrad Kollnig"
 date: "Version `r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -12,9 +12,17 @@ description: "How to treat user privacy right on Android? This book tries to cov
 
 # Preface {-}
 
-Nice that you found your way here. Privacy in apps is a super hot topic. What does this mean for me as an Android developer?
+Hello and welcome!
 
-Surprisingly, there is very few information out there. I, myself, am an app developer, and spent hours browsing on the web. 'How do I do privacy right' is the question that this book want to address.
+It's an honour that you found your way here. Privacy in apps is an important topic. But, what does this mean for me as an Android developer?
+
+Surprisingly, there is very few information out there. This is true even though the General Data Protection Regulation (GDPR), Europe's flagship data protection law, was introduced in May 2018 -- quite a while back.
+
+I, myself, have been an app developer for many, and spent hours browsing on the web to find out about how to comply.
+
+'How do I do privacy in apps right?' is thus the question that this book seeks to address.
+
+If you have any suggestions and feedback, then please reach out to <book@trackercontrol.org>.
 
 ![Creative Commons License](images/by-nc-sa.png)  
 This online book is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).

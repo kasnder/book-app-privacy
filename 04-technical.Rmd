@@ -1,6 +1,21 @@
-# Technical Implementation
+# Technical Implementation (work-in-progress)
 
-As a developer, you often depend on the use of third-party tools, such as Google Analytics or AdMob. And, this is completely fine, and nothing to be ashamed of. However, you probably have thought much about user privacy. So, this chapter shall tell you about some best practices.
+As a developer, you often depend on the use of third-party tools, such as Google Analytics or AdMob. This is completely fine, and nothing to be ashamed of. However, you probably have thought much about user privacy. So, this chapter shall tell you about some best practices.
+
+## Consent
+
+If you use third-party tools, it is best practice to give users an option over this data sharing. Indeed, under EU law, this will often be a legal requirement.
+
+When you implement consent in apps, it is important that you ask for consent *before you initialise* most of your third-party tools. This is because EU law (the ePrivacy Directive in Article 5(3)) requires you to seek consent before you access or store information in on user's device, unless such is strictly necessary. Analytics or ads are not usually strictly necessary and thus need consent.
+
+When asking for consent, make sure you make it for end-users as easy to decline as it is to accept. This means that you should use the same colour for both options and also use neutral (and not leading) language for these options.
+
+A good overview of how to implement consent is provided by the French data protection authority at <https://design.cnil.fr/en/concepts/consent/>.
+
+In implementing consent, you might be playing with the idea of using a consent management platform (CMP). While some CMPs have good features, they can also introduce additional compliance risks. This is because CMPs often involve a significant amount of additional data collection before consent is given. This is why it is better, if you can, to implement the consent flow yourself. This is not complicated. Sample consent implementation for consent on Android can be found on GitHub. For example:
+
+- <https://github.com/gdprsdk/android-gdpr-library>
+- <https://github.com/DavidEdwards/GDPRConsent>
 
 ##  Using popular third-party services right
 
@@ -59,10 +74,6 @@ At best, you should use as few third-party services as possible. If you do, you 
 **Unity Ads**. Unity automatically asks for user consent, unless a special arrangement is reached with Unity. Personal data is only collected if the user consents. When ads are served, Unity provides the user with a “privacy icon”, to change his opt-out setting. If the user opts-out, all collected data is deleted.
 
 *More info:* https://unity3d.com/de/legal/gdpr
-
-## Consent
-
-If you use third-party tools, it is best practice to give users an option over this data sharing. Indeed, under EU law, this will often be a legal requirement.
 
 ## Privacy-preserving alternatives
 
