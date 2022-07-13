@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Legal Stuff | A Practitioner’s Guide to Android Privacy</title>
+  <meta name="description" content="How to treat user privacy right on Android? This book tries to cover the most important technical and legal aspects every Android developer should know about." />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Legal Stuff | A Practitioner’s Guide to Android Privacy" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="How to treat user privacy right on Android? This book tries to cover the most important technical and legal aspects every Android developer should know about." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Legal Stuff | A Practitioner’s Guide to Android Privacy" />
+  
+  <meta name="twitter:description" content="How to treat user privacy right on Android? This book tries to cover the most important technical and legal aspects every Android developer should know about." />
+  
+
+<meta name="author" content="Konrad Kollnig" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="app-privacy.html"/>
+<link rel="next" href="technical-implementation-work-in-progress.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Practitioner's Guide to App Privacy</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="about-the-author.html"><a href="about-the-author.html"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-privacy"><i class="fa fa-check"></i><b>1.1</b> What is privacy?</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#what-is-data"><i class="fa fa-check"></i><b>1.2</b> What is data?</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#the-data-deal-would-you-sell-your-data"><i class="fa fa-check"></i><b>1.3</b> The data deal<strong>: </strong>Would you sell your data?</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#so-what"><i class="fa fa-check"></i><b>1.4</b> So what?</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#we-need-data-protection"><i class="fa fa-check"></i><b>1.5</b> We need data protection</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="app-privacy.html"><a href="app-privacy.html"><i class="fa fa-check"></i><b>2</b> App Privacy</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="app-privacy.html"><a href="app-privacy.html#app-tracking"><i class="fa fa-check"></i><b>2.1</b> App Tracking</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="app-privacy.html"><a href="app-privacy.html#vulnerable-groups-at-risk"><i class="fa fa-check"></i><b>2.1.1</b> Vulnerable groups at risk</a></li>
+<li class="chapter" data-level="2.1.2" data-path="app-privacy.html"><a href="app-privacy.html#weve-been-there.."><i class="fa fa-check"></i><b>2.1.2</b> We’ve been there..</a></li>
+<li class="chapter" data-level="2.1.3" data-path="app-privacy.html"><a href="app-privacy.html#were-all-affected."><i class="fa fa-check"></i><b>2.1.3</b> We’re all affected.</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="app-privacy.html"><a href="app-privacy.html#the-dangers-of-real-time-bidding"><i class="fa fa-check"></i><b>2.2</b> The dangers of real-time bidding</a></li>
+<li class="chapter" data-level="2.3" data-path="app-privacy.html"><a href="app-privacy.html#how-is-my-app-doing"><i class="fa fa-check"></i><b>2.3</b> How is my app doing?</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="app-privacy.html"><a href="app-privacy.html#exodus-privacy"><i class="fa fa-check"></i><b>2.3.1</b> Exodus Privacy</a></li>
+<li class="chapter" data-level="2.3.2" data-path="app-privacy.html"><a href="app-privacy.html#appcensus"><i class="fa fa-check"></i><b>2.3.2</b> AppCensus</a></li>
+<li class="chapter" data-level="2.3.3" data-path="app-privacy.html"><a href="app-privacy.html#trackercontrol"><i class="fa fa-check"></i><b>2.3.3</b> TrackerControl</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="app-privacy.html"><a href="app-privacy.html#shouldnt-users-act-on-privacy-rather-than-developers"><i class="fa fa-check"></i><b>2.4</b> Shouldn’t users act on privacy, rather than developers?</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="app-privacy.html"><a href="app-privacy.html#history-of-implementation"><i class="fa fa-check"></i><b>2.4.1</b> History of implementation</a></li>
+<li class="chapter" data-level="2.4.2" data-path="app-privacy.html"><a href="app-privacy.html#reasons-for-failure"><i class="fa fa-check"></i><b>2.4.2</b> Reasons for failure</a></li>
+<li class="chapter" data-level="2.4.3" data-path="app-privacy.html"><a href="app-privacy.html#privacy-a-binary-setting"><i class="fa fa-check"></i><b>2.4.3</b> Privacy, a binary setting?</a></li>
+<li class="chapter" data-level="2.4.4" data-path="app-privacy.html"><a href="app-privacy.html#the-spirit-of-dnt-lives-on"><i class="fa fa-check"></i><b>2.4.4</b> The spirit of DNT lives on</a></li>
+<li class="chapter" data-level="2.4.5" data-path="app-privacy.html"><a href="app-privacy.html#tracking-continues-whats-next-for-user-privacy"><i class="fa fa-check"></i><b>2.4.5</b> Tracking continues, what’s next for user privacy?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="legal-stuff.html"><a href="legal-stuff.html"><i class="fa fa-check"></i><b>3</b> Legal Stuff</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="legal-stuff.html"><a href="legal-stuff.html#sources"><i class="fa fa-check"></i><b>3.1</b> Sources</a></li>
+<li class="chapter" data-level="3.2" data-path="legal-stuff.html"><a href="legal-stuff.html#methodology-behind-these-guidelines"><i class="fa fa-check"></i><b>3.2</b> Methodology behind these guidelines</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="legal-stuff.html"><a href="legal-stuff.html#key-concepts"><i class="fa fa-check"></i><b>3.2.1</b> Key concepts</a></li>
+<li class="chapter" data-level="3.2.2" data-path="legal-stuff.html"><a href="legal-stuff.html#user-rights"><i class="fa fa-check"></i><b>3.2.2</b> User rights</a></li>
+<li class="chapter" data-level="3.2.3" data-path="legal-stuff.html"><a href="legal-stuff.html#principles-and-obligations"><i class="fa fa-check"></i><b>3.2.3</b> Principles and obligations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html"><i class="fa fa-check"></i><b>4</b> Technical Implementation (work-in-progress)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#consent"><i class="fa fa-check"></i><b>4.1</b> Consent</a></li>
+<li class="chapter" data-level="4.2" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#using-popular-third-party-services-right"><i class="fa fa-check"></i><b>4.2</b> Using popular third-party services right</a></li>
+<li class="chapter" data-level="4.3" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#privacy-preserving-alternatives"><i class="fa fa-check"></i><b>4.3</b> Privacy-preserving alternatives</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#crash-reporting"><i class="fa fa-check"></i><b>4.3.1</b> Crash Reporting</a></li>
+<li class="chapter" data-level="4.3.2" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#analysis"><i class="fa fa-check"></i><b>4.3.2</b> Analysis</a></li>
+<li class="chapter" data-level="4.3.3" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#monetisation"><i class="fa fa-check"></i><b>4.3.3</b> Monetisation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="technical-implementation-work-in-progress.html"><a href="technical-implementation-work-in-progress.html#app-publication"><i class="fa fa-check"></i><b>4.4</b> App Publication</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>5</b> Summary</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Practitioner’s Guide to Android Privacy</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="legal-stuff" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Legal Stuff<a href="legal-stuff.html#legal-stuff" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter shall briefly summarise <em>your legal obligations</em> as an app developer, under EU Data Protection Legislation (GDPR). This shall cover the most important buts, when pushling apps <em>in non-legal terms</em>. Note that this is no no legal advice, only an app developer’s attempt to make data protection more understandable.</p>
+<p>You must respect the rules of GDPR, if you have app users from the European Union. This will almost always be the case. Usually, you are responsible for <em>all</em> data collected through your app. GDPR protects personal data, which is data relating to individuals. This may include device data, pseudonyms, user identifiers, advertising identifiers, (dynamic) IP addresses, and postcodes, especially in combination with other data. For these reasons, it is usually not possible to make personal data non-personal. Almost all data collected from apps is personal, and requires careful protection.</p>
+<p>You are also responsible for personal data collected from your app for third-party services, such as advertising, analytics, or crash reporting services. For instance, this means that you are even responsible for data, that is collected during the use of <em>Google Firebase Analytics</em> or <em>Crashlytics</em> – even if you never see the raw data.</p>
+<p><strong>Ask for consent</strong></p>
+<p>You can only use most third-party services, including Firebase Analytics, after the user has agreed to this practice.</p>
+<p><em>iOS:</em> According the Apple’s terms, you should ask for user consent, before you or your third-parties collect <em>any data</em>, no matter if personal and non-personal.</p>
+<p><em>Android:</em> According to Google’s terms, if you process sensitive data (e.g. health-related), or process data in unexpected ways, do tell the user in a clear manner and ask for his <em>consent</em> (no pre-ticked boxes allowed). Google also states that the use of some of their services, such as Firebase Analytics, needs explicit user consent.</p>
+<p><strong>Always provide a privacy policy.</strong> Provide a privacy policy on the app store and within the app. You may want to use one of the privacy policy generators, such as <a href="https://gdpr4devs.com/iubenda.com">iubenda.com</a>. Make sure it discloses the data collection of you and your third-parties adequately.</p>
+<p><strong>Risk evaluation and documentation.</strong> GDPR acknowledges that there will never be full protection of personal data. Instead, it encourages a risk-based approach, that is, seriously analysing the possible risks to data protection and taking appropriate data protection measures. If you can prove that you took all appropriate measures, there is no need to be overly afraid of high fines.</p>
+<p>Make sure that you can provide such proof, by <em>documenting all data protection considerations, decisions, and actions</em>.</p>
+<p><strong>Reasonable data collection.</strong> You and your third-parties may only collect personal data reasonably, that is, only for the purposes stated in your privacy policy (purpose limitation) and restricted to what is necessary for the stated purposes (data minimisation).</p>
+<p>Furthermore:</p>
+<ul>
+<li>At best, use at most one third-party service for one purpose, that is, at most one advertising, analytics, and crash reporting service.</li>
+<li>Check with every app release, if you can reduce data collection or remove any third-party services.</li>
+<li>Verify the default settings of your third-party services (on-device and server-wise), since third-parties have an interest in collecting ever more data. Only activate third-party services, once user consent is established. More information can be found in the Appendix below.</li>
+<li>If your app is aimed at <em>children</em>, do not employ any third-party services. It’s not good practice, and a violation of Apple’s terms.</li>
+</ul>
+<p><strong>Handling user requests.</strong> The GDPR entitles users to manage (e.g. access, delete, correct) any data about them. You can implement these user rights directly in software, which would show your efforts towards GDPR compliance. Yet, taking requests via email seriously is just as fine. You have one month to respond to user requests. This response may either address the request, or, for complex user requests, request an extension for a further 2 months.</p>
+<p><strong>Security measures and data breaches.</strong> Take the standard measures for security, such as HTTPS communications, salted passwords, validation of user inputs. Apple (<a href="https://developer.apple.com/documentation/security">here</a> and <a href="https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide">here</a>) and <a href="https://developer.android.com/training/articles/security-tips">Google</a> provide comprehensive guidance on this. Try to remove identifiable information whenever possible, through pseudonymisation or anonymisation. If you experience a <em>personal data breach</em>, you must notify <a href="https://edpb.europa.eu/about-edpb/board/members">the data protection authority</a> within 72 hours, plus the individuals in case of high risk.</p>
+<p><strong>Consent for third-party services.</strong> If you use third-party services, the user must be asked for consent in almost all circumstances. This consent must be sought before the third-party service is activated and begins to share data. Beyond consent, the Appendix below provides more detail on the correct implementation of the most widely used third-party services.</p>
+<p><strong>Closing remarks.</strong> By implementing these measures, you should come an important step closer to compliance with GDPR. Additionally, you should consult the guidelines of an EU data protection authority. The British Data Protection Authority, called ICO, provides <a href="https://ico.org.uk/for-organisations/">excellent guidance</a> on data protection.</p>
+<div id="sources" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Sources<a href="legal-stuff.html#sources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>European Parliament and Council: “Regulation 2016/679 (General Data Protection Regulation)”</li>
+<li>Article 29 Data Protection Working Party: “Opinion 02/2013 on apps on smart devices”</li>
+<li>Google LLC: “Google Play Developer Distribution Agreement” (version 15 April 2019)</li>
+<li>Google LLC: “Google Play Developer Program Policies” (accessed 20 June 2019)</li>
+<li>Apple Inc: “Apple Developer Program License Agreement” (accessed 20 June 2019)</li>
+<li>Apple Inc: “App Store Review Guidelines” (version 3 June 2019)</li>
+<li>The documentation of the top 18 third-party services in apps, from 10 different companies.</li>
+</ul>
+</div>
+<div id="methodology-behind-these-guidelines" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Methodology behind these guidelines<a href="legal-stuff.html#methodology-behind-these-guidelines" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>These legal guidelines shall cover the fundamentals of GDPR. These are 1) the key concepts, 2) user rights, and 3) principles and obligations. Legal terminology shall be avoided, to make the guidelines understandable without expert knowledge.</p>
+<div id="key-concepts" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Key concepts<a href="legal-stuff.html#key-concepts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The app developer shall be made aware of what GDPR protects, that is, <em>personal data</em>. Personal data is relevant for the developer, being responsible for its protection as the <em>data controller</em>. There has been much public attention on the <em>high penalties</em>, introduced by GDPR. The risk of such penalties is low, if the developer follows a <em>risk-based approach</em> to data protection, as advocated by GDPR.</p>
+</div>
+<div id="user-rights" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> User rights<a href="legal-stuff.html#user-rights" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Not all developers will be aware of the profound rights, that GDPR grants to users. These shall be mentioned.</p>
+</div>
+<div id="principles-and-obligations" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Principles and obligations<a href="legal-stuff.html#principles-and-obligations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The rest of the document shall cover the seven principles of GDPR, that the developer must follow as data controller:</p>
+<ul>
+<li>Lawfulness, fairness and transparency,</li>
+<li>Purpose limitation,</li>
+<li>Data minimisation,</li>
+<li>Accuracy,</li>
+<li>Storage limitation,</li>
+<li>Security, and</li>
+<li>Accountability.</li>
+</ul>
+<p>To cover the first principle, “lawfulness, fairness and transparency”, the most important step is the provision of an adequate <em>privacy policy</em>. There exist rich online resources, which shall be mentioned.</p>
+<p>For simplicity, the principles “purpose limitation”, “data minimisation”, “accuracy”, and “storage limitation” shall be summarised as <em>reasonable data collection</em>. The term “reasonable” is similarly used in the GDPR and occurs widely across the GDPR document, 52 times.</p>
+<p>Regarding data collection, the further provisions of the platform providers, Apple and Google, shall be added.</p>
+<p>The remaining principles of “security” and “accountability” shall be mentioned. Regarding security, Apple and Google provide support documents, that shall be linked.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="app-privacy.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="technical-implementation-work-in-progress.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["guide_app_privacy.pdf", "guide_app_privacy.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
