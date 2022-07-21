@@ -14,6 +14,7 @@ A good overview of how to implement consent is provided by the French data prote
 
 In implementing consent, you might be playing with the idea of using a consent management platform (CMP). While some CMPs have good features, they can also introduce additional compliance risks. This is because CMPs often involve a significant amount of additional data collection before consent is given. This is why it is better, if you can, to implement the consent flow yourself. This is not complicated. Sample consent implementation for consent on Android can be found on GitHub. For example:
 
+- <https://github.com/kasnder/app-consent-android>
 - <https://github.com/gdprsdk/android-gdpr-library>
 - <https://github.com/DavidEdwards/GDPRConsent>
 
