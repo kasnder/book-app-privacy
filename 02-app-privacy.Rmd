@@ -30,7 +30,7 @@ On average, a person sees over 1 700 online ads per month. A significant proport
 
 ![Supply-side platforms distribute “bid requests” with detailed information about the user to interested advertisers. *Source: Electronic Frontier Foundation*](images/real-time-bidding.png)
 
-n RTB, advertising space on a user’s device is sold via real-time auctions. These auctions are managed by *ad exchanges*. Essentially, ad exchanges apply the concept of eBay to online advertising space. Prominent ad exchanges are Google’s DoubleClick, Microsoft Advertising, and Twitter’s MoPub.
+In RTB, advertising space on a user’s device is sold via real-time auctions. These auctions are managed by *ad exchanges*. Essentially, ad exchanges apply the concept of eBay to online advertising space. Prominent ad exchanges are Google’s DoubleClick, Microsoft Advertising, and Twitter’s MoPub.
 
 The user (“supply side”) provides the advertising display space on their desktop or mobile device, whilst the advertiser (“demand side”) is interested in buying this display space. The auction proceeds as follows: The user’s device requests an ad from an *ad exchange* (“supply-side platform”), a platform for ad auctions. This request usually contains additional data, such as visited website, user identifiers, phone number, or location. The ad exchange may *enrich the data* received from the user with further data, and then contact interested bidders (“bid request”). The bidders (“demand-side platforms”) receive this information about the user and may make a bid to purchase the offered advertising space on the user’s device. Bidders usually have less than 100ms to respond, after which the auction ends. The highest-paying ad is shown to the user.
 
